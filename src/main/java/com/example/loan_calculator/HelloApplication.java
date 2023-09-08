@@ -11,6 +11,8 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("AssignmentLab2.fxml"));
+
+        //placed v and v1 as 500 for larger GUI display on initial run
         Scene scene = new Scene(fxmlLoader.load(), 500, 500);
         stage.setTitle("LoanCalculator");
         stage.setScene(scene);
